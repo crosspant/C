@@ -1,3 +1,10 @@
+/*
+This code uses the dirent.h and regex.h libraries to iterate through all files in a directory and check if the file name matches a specified regular expression. 
+It prompts the user to input the directory path and the regular expression for the file name using the scanf() function.
+The regular expression is compiled using the regcomp() function and then applied to each file name using the regexec() function. 
+If there's a match, the full path of the file is printed using printf().
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <dirent.h>
